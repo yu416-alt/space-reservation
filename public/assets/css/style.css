@@ -1,0 +1,412 @@
+@charset "UTF-8";
+/* line 11, ../../../laravelapp/public/assets/css/style.scss */
+html {
+  font-size: 62.5%;
+  /*font-sizeは16pxの62.5%の10px=1rem*/
+  font-family: 'Noto+Sans'; }
+  /* line 14, ../../../laravelapp/public/assets/css/style.scss */
+  html body {
+    background-color: #e7f8f9; }
+  @media screen and (max-width: 1350px) {
+    /* line 11, ../../../laravelapp/public/assets/css/style.scss */
+    html {
+      font-size: 50%; } }
+
+/* line 24, ../../../laravelapp/public/assets/css/style.scss */
+header {
+  position: fixed;
+  top: 0;
+  z-index: 3;
+  height: 50px;
+  width: 100%;
+  background-color: #035a80;
+  font-size: 1.5rem;
+  color: white;
+  display: flex;
+  justify-content: space-between; }
+  /* line 36, ../../../laravelapp/public/assets/css/style.scss */
+  header div {
+    display: flex; }
+    /* line 39, ../../../laravelapp/public/assets/css/style.scss */
+    header div a {
+      height: 70%;
+      margin: auto 20px auto 50px; }
+    /* line 44, ../../../laravelapp/public/assets/css/style.scss */
+    header div p {
+      display: inline-block;
+      width: 22rem;
+      margin-left: 20px; }
+      /* line 49, ../../../laravelapp/public/assets/css/style.scss */
+      header div p .orange {
+        color: #ee6c4d;
+        font-size: 2.5rem;
+        line-height: 22px; }
+      /* line 55, ../../../laravelapp/public/assets/css/style.scss */
+      header div p.login {
+        background-color: #ee6c4d;
+        height: 50px;
+        margin: 0 30px;
+        text-align: center;
+        line-height: 25px; }
+    /* line 65, ../../../laravelapp/public/assets/css/style.scss */
+    header div .login-btn {
+      width: 160px;
+      height: 32px;
+      color: white;
+      background-color: #ee6c4d;
+      border-radius: 14.5px;
+      margin: 9px 80px 9px 0;
+      line-height: 30px;
+      text-align: center; }
+      @media screen and (max-width: 750px) {
+        /* line 65, ../../../laravelapp/public/assets/css/style.scss */
+        header div .login-btn {
+          margin: 9px 10px 9px 0; } }
+      /* line 78, ../../../laravelapp/public/assets/css/style.scss */
+      header div .login-btn.logout {
+        color: #484a4b;
+        background-color: white;
+        border: 1px solid #e9e9e9; }
+    /* line 84, ../../../laravelapp/public/assets/css/style.scss */
+    header div .logout-icon {
+      display: none;
+      color: white;
+      font-size: 3.5rem;
+      margin: auto 20px auto 0; }
+  @media screen and (max-width: 1350px) {
+    /* line 92, ../../../laravelapp/public/assets/css/style.scss */
+    header .display-none {
+      display: none; }
+    /* line 96, ../../../laravelapp/public/assets/css/style.scss */
+    header div .logout-icon {
+      display: inline-block; } }
+
+/* line 105, ../../../laravelapp/public/assets/css/style.scss */
+.fast-view {
+  position: relative;
+  color: #484a4b;
+  height: 700px;
+  padding-bottom: 1px; }
+  /* line 111, ../../../laravelapp/public/assets/css/style.scss */
+  .fast-view .background-image {
+    background-image: url("../img/fv-image.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 83%;
+    height: 600px;
+    position: absolute;
+    right: 0; }
+  /* line 122, ../../../laravelapp/public/assets/css/style.scss */
+  .fast-view .band {
+    position: absolute;
+    top: 20%;
+    left: 0;
+    z-index: 2;
+    font-family: serif;
+    padding: 40px 180px 40px 130px;
+    background: linear-gradient(0deg, transparent 0px, rgba(255, 255, 255, 0.7) 0px), linear-gradient(0deg, transparent 0px, rgba(255, 255, 255, 0.7) 0px), linear-gradient(245deg, transparent 70px, rgba(255, 255, 255, 0.7) 0px), linear-gradient(295deg, transparent 70px, rgba(255, 255, 255, 0.7) 0px);
+    background-position: bottom left, top left, top right, bottom right;
+    background-size: 50% 50%;
+    background-repeat: no-repeat;
+    font-weight: bold;
+    letter-spacing: 5px;
+    line-height: 40px; }
+    /* line 142, ../../../laravelapp/public/assets/css/style.scss */
+    .fast-view .band .fs-30px {
+      font-size: 3rem; }
+      /* line 144, ../../../laravelapp/public/assets/css/style.scss */
+      .fast-view .band .fs-30px span {
+        color: #ee6c4d;
+        font-size: 4.2rem; }
+    /* line 150, ../../../laravelapp/public/assets/css/style.scss */
+    .fast-view .band .fs-24px {
+      font-size: 2.4rem; }
+    /* line 154, ../../../laravelapp/public/assets/css/style.scss */
+    .fast-view .band img {
+      width: 100%;
+      margin-left: 10%; }
+  @media screen and (max-width: 1350px) {
+    /* line 160, ../../../laravelapp/public/assets/css/style.scss */
+    .fast-view .band {
+      max-width: 90%; } }
+  @media screen and (max-width: 750px) {
+    /* line 163, ../../../laravelapp/public/assets/css/style.scss */
+    .fast-view .background-image {
+      background-image: url("../img/fv-image.png");
+      width: 90%;
+      height: 450px;
+      right: 0;
+      top: 150px; }
+    /* line 170, ../../../laravelapp/public/assets/css/style.scss */
+    .fast-view .band {
+      padding: 20px 100px 20px 50px;
+      top: 15%; }
+      /* line 173, ../../../laravelapp/public/assets/css/style.scss */
+      .fast-view .band img {
+        width: 80%; } }
+
+/* line 180, ../../../laravelapp/public/assets/css/style.scss */
+#room-select {
+  margin: 50px 17%;
+  width: 66%; }
+  /* line 184, ../../../laravelapp/public/assets/css/style.scss */
+  #room-select section {
+    width: 95%;
+    margin: 50px auto;
+    position: relative;
+    display: flex; }
+    /* line 190, ../../../laravelapp/public/assets/css/style.scss */
+    #room-select section h2 {
+      position: absolute;
+      top: 10%;
+      left: 0;
+      width: 23%;
+      padding-left: 40px;
+      color: white;
+      font-size: 1.5rem;
+      background-color: #035a80;
+      background: linear-gradient(0deg, transparent 0px, #035a80 0px), linear-gradient(0deg, transparent 0px, #035a80 0px), linear-gradient(245deg, transparent 10px, #035a80 0px), linear-gradient(295deg, transparent 10px, #035a80 0px);
+      background-position: bottom left, top left, top right, bottom right;
+      background-size: 50% 50%;
+      background-repeat: no-repeat;
+      font-weight: bold;
+      letter-spacing: 5px;
+      line-height: 35px; }
+    /* line 212, ../../../laravelapp/public/assets/css/style.scss */
+    #room-select section img {
+      width: 50%; }
+    /* line 216, ../../../laravelapp/public/assets/css/style.scss */
+    #room-select section div {
+      background-color: white;
+      width: 50%;
+      letter-spacing: 1.5px; }
+      /* line 221, ../../../laravelapp/public/assets/css/style.scss */
+      #room-select section div .table {
+        margin: 0 20px;
+        font-size: 1.3rem; }
+        /* line 225, ../../../laravelapp/public/assets/css/style.scss */
+        #room-select section div .table th {
+          width: 25%;
+          padding: 5px;
+          font-weight: 600; }
+        /* line 230, ../../../laravelapp/public/assets/css/style.scss */
+        #room-select section div .table td {
+          padding: 5px 30px 5px 0; }
+      /* line 235, ../../../laravelapp/public/assets/css/style.scss */
+      #room-select section div a {
+        display: inline-block;
+        background-color: #98c1d9;
+        width: 185px;
+        height: 32px;
+        border-radius: 14.5px;
+        margin: 30px 25%;
+        color: #484a4b;
+        font-size: 1.3rem;
+        font-weight: bold;
+        line-height: 32px;
+        text-align: center;
+        box-shadow: 0px 2px 0px 0px rgba(0, 0, 0, 0.3); }
+        /* line 249, ../../../laravelapp/public/assets/css/style.scss */
+        #room-select section div a:hover {
+          position: relative;
+          border-bottom: none;
+          top: 2px;
+          box-shadow: none; }
+  @media screen and (max-width: 1350px) {
+    /* line 259, ../../../laravelapp/public/assets/css/style.scss */
+    #room-select section {
+      width: 100%; }
+      /* line 261, ../../../laravelapp/public/assets/css/style.scss */
+      #room-select section h2 {
+        width: 30%;
+        text-align: center;
+        padding: 0; }
+      /* line 264, ../../../laravelapp/public/assets/css/style.scss */
+      #room-select section a {
+        margin: 10px 20px; } }
+  @media screen and (max-width: 750px) {
+    /* line 268, ../../../laravelapp/public/assets/css/style.scss */
+    #room-select section {
+      flex-direction: column;
+      width: 100%; }
+      /* line 271, ../../../laravelapp/public/assets/css/style.scss */
+      #room-select section h2 {
+        width: 40%;
+        top: 5%; }
+      /* line 273, ../../../laravelapp/public/assets/css/style.scss */
+      #room-select section img {
+        width: 100%; }
+      /* line 274, ../../../laravelapp/public/assets/css/style.scss */
+      #room-select section div {
+        width: 100%; } }
+
+/* line 284, ../../../laravelapp/public/assets/css/style.scss */
+#content .background-white {
+  background-color: white; }
+
+/* line 289, ../../../laravelapp/public/assets/css/style.scss */
+#content h2 {
+  font-size: 1.5rem;
+  position: relative;
+  padding: 5px 25px;
+  margin-bottom: 20px; }
+  /* line 295, ../../../laravelapp/public/assets/css/style.scss */
+  #content h2::before, #content h2::after {
+    position: absolute;
+    content: ''; }
+  /* line 299, ../../../laravelapp/public/assets/css/style.scss */
+  #content h2::before {
+    top: 0;
+    left: 10px;
+    height: 35px;
+    border-left: 2px solid #035a80; }
+  /* line 305, ../../../laravelapp/public/assets/css/style.scss */
+  #content h2::after {
+    bottom: 0;
+    left: 0;
+    width: 200px;
+    border-bottom: 2px solid #98c1d9; }
+
+/* line 313, ../../../laravelapp/public/assets/css/style.scss */
+#content .padding {
+  width: 100%;
+  padding: 40px 17%;
+  letter-spacing: 1.5px; }
+  /* line 318, ../../../laravelapp/public/assets/css/style.scss */
+  #content .padding p {
+    margin-left: 20px;
+    font-size: 1.3rem; }
+    /* line 322, ../../../laravelapp/public/assets/css/style.scss */
+    #content .padding p .orange {
+      color: #ee6c4d; }
+  /* line 326, ../../../laravelapp/public/assets/css/style.scss */
+  #content .padding .fs-15px {
+    font-size: 1.5rem;
+    margin-bottom: -10px; }
+  /* line 330, ../../../laravelapp/public/assets/css/style.scss */
+  #content .padding .flex {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 50px; }
+    /* line 335, ../../../laravelapp/public/assets/css/style.scss */
+    #content .padding .flex iframe {
+      width: 400;
+      height: 200px;
+      border: 0; }
+  @media screen and (max-width: 750px) {
+    /* line 313, ../../../laravelapp/public/assets/css/style.scss */
+    #content .padding {
+      padding: 40px 5%; }
+      /* line 343, ../../../laravelapp/public/assets/css/style.scss */
+      #content .padding .flex {
+        flex-direction: column-reverse; }
+        /* line 345, ../../../laravelapp/public/assets/css/style.scss */
+        #content .padding .flex iframe {
+          margin: 20px; } }
+
+/* line 350, ../../../laravelapp/public/assets/css/style.scss */
+#content .side-color {
+  width: 76%;
+  padding: 100px 30px 100px 50px;
+  margin: 0 12%;
+  min-height: 100vh;
+  background-color: white;
+  letter-spacing: 1.5px;
+  font-size: 1.5rem;
+  color: #484a4b; }
+  /* line 360, ../../../laravelapp/public/assets/css/style.scss */
+  #content .side-color h3 {
+    font-size: 1.5rem;
+    margin: 0 0 30px 30px; }
+  /* line 364, ../../../laravelapp/public/assets/css/style.scss */
+  #content .side-color i {
+    font-size: 1.5rem;
+    margin-left: 5px;
+    color: #035a80; }
+  /* line 369, ../../../laravelapp/public/assets/css/style.scss */
+  #content .side-color p {
+    margin-top: 10px; }
+  /* line 372, ../../../laravelapp/public/assets/css/style.scss */
+  #content .side-color .error {
+    color: #ee6c4d; }
+  /* line 375, ../../../laravelapp/public/assets/css/style.scss */
+  #content .side-color .submit-btn {
+    display: inline-block;
+    background-color: #98c1d9;
+    width: 185px;
+    height: 32px;
+    border-radius: 14.5px;
+    border: none;
+    box-shadow: 0px 2px 0px 0px rgba(0, 0, 0, 0.3);
+    font-weight: bold;
+    text-align: center;
+    line-height: 32px; }
+    /* line 387, ../../../laravelapp/public/assets/css/style.scss */
+    #content .side-color .submit-btn:hover {
+      position: relative;
+      top: 2px;
+      box-shadow: none;
+      border: none; }
+    /* line 393, ../../../laravelapp/public/assets/css/style.scss */
+    #content .side-color .submit-btn.back {
+      background-color: white;
+      border: 1px solid #e9e9e9; }
+  /* line 398, ../../../laravelapp/public/assets/css/style.scss */
+  #content .side-color .table {
+    max-width: 500px; }
+    /* line 400, ../../../laravelapp/public/assets/css/style.scss */
+    #content .side-color .table th {
+      width: 170px; }
+  /* line 404, ../../../laravelapp/public/assets/css/style.scss */
+  #content .side-color .background-color {
+    background-color: #e9e9e9;
+    width: 95%;
+    padding: 30px; }
+  /* line 409, ../../../laravelapp/public/assets/css/style.scss */
+  #content .side-color.padding-bottom {
+    padding-bottom: 300px; }
+  @media screen and (max-width: 750px) {
+    /* line 350, ../../../laravelapp/public/assets/css/style.scss */
+    #content .side-color {
+      margin: 0 5%;
+      width: 90%; } }
+
+/* line 421, ../../../laravelapp/public/assets/css/style.scss */
+footer {
+  height: 50px;
+  width: 100%;
+  background-color: #035a80;
+  font-size: 1.5rem;
+  color: white;
+  display: flex;
+  justify-content: space-between; }
+  /* line 430, ../../../laravelapp/public/assets/css/style.scss */
+  footer img {
+    height: 70%;
+    margin: auto 0 auto 50px; }
+  /* line 435, ../../../laravelapp/public/assets/css/style.scss */
+  footer ul {
+    display: flex;
+    line-height: 40px;
+    letter-spacing: 1px;
+    margin-right: 50px; }
+    /* line 441, ../../../laravelapp/public/assets/css/style.scss */
+    footer ul li {
+      list-style: none;
+      margin: 0 15px; }
+      /* line 445, ../../../laravelapp/public/assets/css/style.scss */
+      footer ul li i {
+        font-size: 1.5rem;
+        margin-right: 6px; }
+      @media screen and (max-width: 750px) {
+        /* line 441, ../../../laravelapp/public/assets/css/style.scss */
+        footer ul li {
+          padding-top: 5px; }
+          /* line 451, ../../../laravelapp/public/assets/css/style.scss */
+          footer ul li span {
+            display: none; }
+          /* line 452, ../../../laravelapp/public/assets/css/style.scss */
+          footer ul li i {
+            font-size: 3rem; } }
+
+/*# sourceMappingURL=style.css.map */
